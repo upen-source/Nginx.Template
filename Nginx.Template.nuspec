@@ -22,6 +22,6 @@
     <copyright>Copyright 2021</copyright>
   </metadata>
   <files>
-    <file src=".\**" target="content" exclude="**\bin\**;*.nuspec;*.config;**\obj\**;**\.git\**;**\.github\workflows\publish.yml;**\*.user;**\.idea\**;**\.vscode\**;\**\.template.config\**" />
+    <file src=".\**" target="content" exclude="**\bin\**;*.nuspec;nuget.config;**\obj\**;**\.git\**;**\.github\workflows\publish.yml;**\*.user;**\.idea\**;**\.vscode\**;\**\.template.config\**" />
   </files>
 </package>

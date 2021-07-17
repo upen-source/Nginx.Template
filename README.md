@@ -2,7 +2,7 @@
 
 [![.NET](https://github.com/afgalvan/Nginx.Template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/afgalvan/Nginx.Template/actions/workflows/dotnet.yml)
 [![NuGet](https://github.com/afgalvan/Nginx.Template/actions/workflows/publish.yml/badge.svg)](https://github.com/afgalvan/Nginx.Template/actions/workflows/publish.yml)
-[![Nuget Version](https://img.shields.io/nuget/v/Nginx.Template.Template.svg)](https://www.nuget.org/packages/Nginx.Template.Template/)
+[![Nuget Version](https://img.shields.io/nuget/v/Nginx.Template.svg)](https://www.nuget.org/packages/Nginx.Template/)
 
 ASP.NET project template with nginx.
 

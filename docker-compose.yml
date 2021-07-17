@@ -1,0 +1,11 @@
+---
+version: "3.8"
+
+services:
+  app:
+    container_name: application-name
+    build:
+      context: .
+      dockerfile: src/CSharpSkeleton/Dockerfile
+    environment:
+      - ENVIRONMENT=Docker

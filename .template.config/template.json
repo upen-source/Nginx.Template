@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andres Galvan",
+  "classifications": ["Common", "Console", "C#"],
+  "identity": "CSharp.Skeleton",
+  "name": "C# Skeleton: Basic console project structure",
+  "shortName": "skeleton",
+  "sourceName": "CSharpSkeleton",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

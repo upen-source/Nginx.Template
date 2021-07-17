@@ -5,11 +5,21 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{565C6579-A7B1-4F06-8008-6FA5D45BAAE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSkeleton", "src\CSharpSkeleton\CSharpSkeleton.csproj", "{97576997-05A4-4E64-A009-E727BCE8DA82}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{352B3D40-F028-453F-A52E-5FE09DAF7D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSkeleton.Test", "test\CSharpSkeleton.Test\CSharpSkeleton.Test.csproj", "{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nginx.Template.Test", "test\Nginx.Template.Test\Nginx.Template.Test.csproj", "{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nginx.Template", "src\Nginx.Template\Nginx.Template.csproj", "{3ADDD51C-C0E0-4567-B261-E98E625AED0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{559B7F6F-6FE3-4E48-B877-FD12C553A6F1}"
+	ProjectSection(SolutionItems) = preProject
+		docker\docker-compose.yml = docker\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{8BE4DD56-B00C-4F0C-A935-A8E62B7FFA76}"
+ProjectSection(SolutionItems) = preProject
+	nginx\nginx.conf = nginx\nginx.conf
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,18 +34,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|x64.Build.0 = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Debug|x86.Build.0 = Debug|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|x64.ActiveCfg = Release|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|x64.Build.0 = Release|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|x86.ActiveCfg = Release|Any CPU
-		{97576997-05A4-4E64-A009-E727BCE8DA82}.Release|x86.Build.0 = Release|Any CPU
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -48,9 +46,21 @@ Global
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Release|x64.Build.0 = Release|Any CPU
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Release|x86.ActiveCfg = Release|Any CPU
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868}.Release|x86.Build.0 = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|x64.Build.0 = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Debug|x86.Build.0 = Debug|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|x64.ActiveCfg = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|x64.Build.0 = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|x86.ActiveCfg = Release|Any CPU
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{97576997-05A4-4E64-A009-E727BCE8DA82} = {565C6579-A7B1-4F06-8008-6FA5D45BAAE6}
 		{5FD9DDE3-0FE5-4476-9A74-1E736CE8C868} = {352B3D40-F028-453F-A52E-5FE09DAF7D97}
+		{3ADDD51C-C0E0-4567-B261-E98E625AED0C} = {565C6579-A7B1-4F06-8008-6FA5D45BAAE6}
 	EndGlobalSection
 EndGlobal

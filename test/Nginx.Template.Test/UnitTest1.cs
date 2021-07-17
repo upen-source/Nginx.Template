@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace CSharpSkeleton.Test
+namespace Nginx.Template.Test
 {
     public class Tests
     {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Nginx.Template</id>
+    <title>Nginx.Template</title>
+    <version>0.1.0</version>
+    <authors>Andres Galvan</authors>
+    <owners>Andres Galvan</owners>
+    <description>
+      ASP.NET web template with nginx
+    </description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/afgalvan/Nginx.Template</projectUrl>
+    <repository type="github" url="https://github.com/afgalvan/Nginx.Template" />
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <releaseNotes>Initial Release</releaseNotes>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>solution template nginx asp.net web</tags>
+    <copyright>Copyright 2021</copyright>
+  </metadata>
+  <files>
+    <file src=".\**" target="content" exclude="**\bin\**;*.nuspec;*.config;**\obj\**;**\.git\**;**\.github\workflows\publish.yml;**\*.user;**\.idea\**;**\.vscode\**;\**\.template.config\**" />
+  </files>
+</package>

@@ -14,9 +14,9 @@ services:
       MYSQL_USER: username
       MYSQL_PASSWORD: password
 
-  webapp:
-    container_name: asp_webapp
-    image: asp_webapp
+  api:
+    container_name: asp_api
+    image: asp_api
     restart: always
     build:
       context: ../
@@ -29,7 +29,7 @@ services:
       - 5000:5000
 
   nginx:
-    container_name: app_proxy
+    container_name: api_proxy
     image: nginx:1.20-alpine
     restart: always
     ports:
@@ -38,7 +38,7 @@ services:
     volumes:
       - ../nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
-      - webapp
+      - api
 
 volumes:
   mysql:

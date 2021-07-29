@@ -4,7 +4,7 @@
   "classifications": ["Nginx", "Web", "C#"],
   "identity": "Nginx.Template",
   "name": "ASP.NET web template with nginx",
-  "shortName": "web-ngx",
+  "shortName": "ngx-api",
   "sourceName": "Nginx.Template",
   "preferNameDirectory": true,
   "tags": {

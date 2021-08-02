@@ -24,7 +24,7 @@ dotnet new -i Nginx.Template
 ## Usage
 
 ```bash
-dotnet new web-ngx -o Your.Project
+dotnet new ngx-api -o Your.Project
 ```
 
 ## Run it from Docker
